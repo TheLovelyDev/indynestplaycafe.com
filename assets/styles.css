@@ -12,11 +12,11 @@ body {
   font-family: "filson-soft", sans-serif;
   padding: 0;
   margin: 0;
+  color: #333;
   background-color: rgb(var(--nest-light));
 }
 
 h1 {
-  text-align: center;
   font-weight: 500;
   text-transform: uppercase;
   color: rgb(var(--nest-red));
@@ -27,7 +27,14 @@ h2 {
   font-weight: 500;
   font-size: clamp(2rem, 10vw, 5rem);
   text-transform: uppercase;
-  text-align: center;
+  color: rgb(var(--nest-blue));
+  margin: 0;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: uppercase;
   color: rgb(var(--nest-blue));
   margin: 0;
 }
@@ -35,7 +42,8 @@ h2 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
+  max-width: 550px;
+  margin-bottom: 1Dem;
 }
 
 .wrapper {
@@ -44,6 +52,11 @@ p {
   background-image: url('./nest_swoop.svg');
   background-position: bottom right;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2em;
 }
 
 .logo {
@@ -56,8 +69,64 @@ p {
   height: 20vw;
   width: auto;
 }
+
 @media (min-width: 760px) {
   .logo__svg {
     height: 10vw;
   }
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  padding: .5em 2em;
+  margin: 1em 0;
+  font-size: 1em;
+  background-color: rgb(var(--nest-red));
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 1.2em;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  color: rgb(var(--nest-blue));
+}
+
+.social__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  grid-gap: .25em;
+}
+
+.social__list::before {
+  content: '';
+  display: block;
+  width: 5em;
+  height: 2px;
+  margin: 0 1em;
+  background-color: currentColor;
+  border-radius: 1em;
+}
+
+.social__link {
+  padding: .25em;
+  color: inherit;
+}
+
+.social__link svg {
+  height: 1.25em;
+  width: auto;
+  fill: currentColor;
 }
