@@ -4,6 +4,7 @@ class MembershipSelector extends HTMLElement {
 
     this.select = this.querySelector('#membership__selection');
     this.link = this.querySelector('a');
+    this.errorMsg = this.querySelector('.membership__error');
 
     this.select.addEventListener('change', (event) => {
       this.membershipChange(this.select.value);

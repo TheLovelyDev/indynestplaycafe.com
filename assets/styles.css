@@ -62,7 +62,8 @@ p {
 .logo {
   display: flex;
   justify-content: center;
-  padding: 5vw 0;
+  padding: 0;
+  margin-bottom: clamp(3rem, 5vw, 10rem);
 }
 
 .logo__svg {
@@ -73,6 +74,7 @@ p {
 @media (min-width: 760px) {
   .logo__svg {
     height: 10vw;
+    max-height: 150px;
   }
 }
 
