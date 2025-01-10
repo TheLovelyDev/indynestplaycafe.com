@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: clamp(2rem, 10vw, 5rem);
   text-transform: uppercase;
   color: rgb(var(--nest-blue));
@@ -129,4 +129,61 @@ p {
   height: 1.25em;
   width: auto;
   fill: currentColor;
+}
+
+.membership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.membership__form-group {
+  display: flex;
+  align-items: center;
+}
+
+.membership__label {
+  font-size: 1em;
+  color: rgb(var(--nest-blue));
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.membership__select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgb(255, 249, 236)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right .75em center;
+  background-size: .875em;
+  font-size: 1em;
+  border: 0;
+  border-right: 2px solid rgb(var(--nest-light));
+  border-radius: 1.2em 0 0 1.2em;
+  background-color: rgb(var(--nest-red));
+  color: rgb(var(--nest-light));
+  padding: .5em 2em .5em 2em;
+  font-family: "filson-soft", sans-serif;
+  font-weight: 500;
+}
+
+.membership__link {
+  padding: calc(.5em + 1px) .75em calc(.5em + 1px) 1em;
+  margin: 0;
+  font-size: 1em;
+  background-color: rgb(var(--nest-red));
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0 1.2em 1.2em 0;
+  display: flex;
+  align-items: center;
+}
+
+.membership__link svg {
+  fill: rgb(var(--nest-light));
+  height: 1em;
+  width: 1em;
 }
