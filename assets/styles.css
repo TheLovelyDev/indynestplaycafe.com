@@ -207,3 +207,24 @@ a {
   height: 1em;
   width: 1em;
 }
+
+.nest-logo__nest-background,
+.nest-logo__nest-foreground {
+  transform-origin: center;
+  animation: wiggle .5s infinite alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+  25% {
+    transform: rotate(1deg) translateX(5px) translateY(1px);
+  }
+  75% {
+    transform: rotate(-1deg) translateX(-5px) translateY(1px);
+  }
+}
