@@ -107,6 +107,11 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 1.2em;
+  transition: .3s;
+}
+
+.button:hover {
+  background-color: rgb(var(--nest-blue));
 }
 
 .social {
