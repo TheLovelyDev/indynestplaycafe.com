@@ -37,8 +37,7 @@ class MembershipSelector extends HTMLElement {
     if (href && href !== "#") {
       window.location = this.link.href;
     } else {
-      this.error = "Please select a membership.";
-      console.warn("No membership selected.");
+      this.errorMsg.textContent = "Please select a membership.";
     }
   }
 }
