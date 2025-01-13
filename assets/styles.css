@@ -43,7 +43,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   max-width: 575px;
-  margin-bottom: 1Dem;
+  margin-bottom: 1em;
 }
 
 a {
@@ -173,6 +173,13 @@ a {
   padding: .5em 2em .5em 2em;
   font-family: "filson-soft", sans-serif;
   font-weight: 500;
+  width: 70vw;
+}
+
+@media (min-width: 600px) {
+  .membership__select {
+    width: auto;
+  }
 }
 
 .membership__link {
